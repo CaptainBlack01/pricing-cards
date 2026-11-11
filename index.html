@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nebula pricing plans — simple, transparent pricing for teams of every size." />
+    <title>Nebula — Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header class="hero">
+      <span class="badge">Pricing</span>
+      <h1>Plans that scale with you</h1>
+      <p class="hero-sub">
+        Start free, upgrade when you grow. No hidden fees, cancel anytime.
+      </p>
+
+      <div class="billing-toggle" role="group" aria-label="Billing period">
+        <button type="button" class="toggle-btn is-active" data-period="monthly" aria-pressed="true">
+          Monthly
+        </button>
+        <button type="button" class="toggle-btn" data-period="yearly" aria-pressed="false">
+          Yearly
+          <span class="save-tag">-20%</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="plans" aria-label="Pricing plans">
+        <article class="plan">
+          <header class="plan-head">
+            <h2>Starter</h2>
+            <p class="plan-desc">For individuals exploring ideas.</p>
+          </header>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="0" data-yearly="0">0</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="billed">Free forever</p>
+          <a class="cta cta-ghost" href="#">Get started</a>
+          <ul class="features">
+            <li>1 project</li>
+            <li>5 GB storage</li>
+            <li>Community support</li>
+            <li>Basic analytics</li>
+          </ul>
+        </article>
+
+        <article class="plan plan-featured">
+          <span class="ribbon">Most popular</span>
+          <header class="plan-head">
+            <h2>Pro</h2>
+            <p class="plan-desc">For growing teams shipping fast.</p>
+          </header>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="24" data-yearly="19">24</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="billed" data-monthly-text="Billed monthly" data-yearly-text="Billed annually ($228/yr)">Billed monthly</p>
+          <a class="cta cta-solid" href="#">Start free trial</a>
+          <ul class="features">
+            <li>Unlimited projects</li>
+            <li>100 GB storage</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+            <li>Custom domains</li>
+            <li>Team collaboration</li>
+          </ul>
+        </article>
+
+        <article class="plan">
+          <header class="plan-head">
+            <h2>Enterprise</h2>
+            <p class="plan-desc">For organizations with complex needs.</p>
+          </header>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="79" data-yearly="63">79</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="billed" data-monthly-text="Billed monthly" data-yearly-text="Billed annually ($756/yr)">Billed monthly</p>
+          <a class="cta cta-ghost" href="#">Contact sales</a>
+          <ul class="features">
+            <li>Everything in Pro</li>
+            <li>Unlimited storage</li>
+            <li>Dedicated manager</li>
+            <li>SSO &amp; SAML</li>
+            <li>Audit logs</li>
+            <li>99.9% uptime SLA</li>
+          </ul>
+        </article>
+      </section>
+
+      <p class="note">All prices in USD. Taxes may apply.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
